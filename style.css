@@ -3,13 +3,13 @@
 
 /* Common styles */
 body{
-    width: 1220px;
+    width: auto;
     margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
 /* Header Section */
 .header-section{
-    width: 1220px;
+    width: auto;
     height: 500px;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -114,7 +114,7 @@ body{
 }
 
 .cover-section{
-    width: 1220px;
+    width: auto;
     height: 600px;
     background-image: url(images/cover.jpg);
     background-position: center;
