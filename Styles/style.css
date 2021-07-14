@@ -3,22 +3,29 @@
 
 /* Common styles */
 body{
+    width: 1220px;
     margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
-
 /* Header Section */
 .header-section{
     width: 1220px;
-    height: 600px;
+    height: 500px;
     background-position: center;
     background-size: cover;
     background-image: url(../images/field-1.jpg);
     margin-top: 0px;
+    margin-bottom: 50px;
 }
-.header-bannar{
+/* .header-bannar{
     margin-left: 3%;
     display: flex;
+    align-items: center;
+} */
+.header-bannar{
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 .header-bannar .header-image .top-player-image img{
@@ -32,15 +39,16 @@ body{
     display: flex;
 }
 .header-image .top-player-image:hover{
-    transform: scale(1.40);
+    transform: scale(1.35);
     transition: transform, 3s;
 }
 
 .header-details{
     color: white;
+    margin-top: 40px;
 }
 .section-title{
-    font-size: 70px;
+    font-size: 80px;
     margin: 0%;
     line-height: 90px;
 }
@@ -70,4 +78,102 @@ body{
     margin-left: 5px;
     align-items: center;
     justify-content: center;
+}
+
+
+.player{
+    width: 300px;
+    height: 446px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px gray;
+    padding: 15px;
+    
+}
+.player img{
+    width: 100%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,330px);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    justify-content: center;
+    margin: 0%;
+    margin-bottom: 100px;
+}
+.player-name{
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0%;
+}
+.player-details{
+    font-size: 16px;
+    color: #6C6C6C;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+.cover-section{
+    width: 1220px;
+    height: 600px;
+    background-image: url(/images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.cover-text{
+    color: white;
+    margin-left: 52%;
+    padding-top: 15%;
+}
+.cover-title{
+    font-size: 40px;
+    margin: 0%;
+}
+.cover-title-para{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-section{
+    height: 200px;
+}
+.footer-image img{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fab{
+    font-size: 30px;
+    margin:0px 20px;
+}
+.icon a{
+    text-decoration: none;
+    color: inherit;
+}
+.footer-text{
+    text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width:688px) {
+
+    .header-bannar{
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 300px;
+    }
 }
