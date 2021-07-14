@@ -11,10 +11,15 @@ body{
 .header-section{
     width: 1220px;
     height: 500px;
-    background-color: #2D25A0;
     margin-top: 0px;
     margin-bottom: 50px;
+<<<<<<< HEAD
     background-image: url(images/field-1.jpg);
+=======
+    background-image: url(/images/field-1.jpg);
+    background-position: center;
+    background-size: cover;
+>>>>>>> 338a433d1a578094d924840705e7ae5b5664fb13
 }
 
 .header-bannar{
